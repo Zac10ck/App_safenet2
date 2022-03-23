@@ -72,12 +72,11 @@ export class UserControllerBase {
     return await this.service.create({
       data: data,
       select: {
-        createdAt: true,
         firstName: true,
         id: true,
+        key: true,
         lastName: true,
         roles: true,
-        updatedAt: true,
         username: true,
       },
     });
@@ -112,12 +111,11 @@ export class UserControllerBase {
     const results = await this.service.findMany({
       ...args,
       select: {
-        createdAt: true,
         firstName: true,
         id: true,
+        key: true,
         lastName: true,
         roles: true,
-        updatedAt: true,
         username: true,
       },
     });
@@ -151,12 +149,11 @@ export class UserControllerBase {
     const result = await this.service.findOne({
       where: params,
       select: {
-        createdAt: true,
         firstName: true,
         id: true,
+        key: true,
         lastName: true,
         roles: true,
-        updatedAt: true,
         username: true,
       },
     });
@@ -211,12 +208,11 @@ export class UserControllerBase {
         where: params,
         data: data,
         select: {
-          createdAt: true,
           firstName: true,
           id: true,
+          key: true,
           lastName: true,
           roles: true,
-          updatedAt: true,
           username: true,
         },
       });
@@ -251,12 +247,11 @@ export class UserControllerBase {
       return await this.service.delete({
         where: params,
         select: {
-          createdAt: true,
           firstName: true,
           id: true,
+          key: true,
           lastName: true,
           roles: true,
-          updatedAt: true,
           username: true,
         },
       });
