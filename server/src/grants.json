@@ -1,8 +1,20 @@
 [
   {
+    "role": "loginUsers",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
     "role": "user",
     "resource": "User",
     "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "loginUsers",
+    "resource": "User",
+    "action": "create:any",
     "attributes": "*"
   },
   {
@@ -12,9 +24,15 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "loginUsers",
     "resource": "User",
     "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "loginUsers",
+    "resource": "User",
+    "action": "delete:any",
     "attributes": "*"
   },
   {
@@ -24,39 +42,45 @@
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "loginUsers",
     "resource": "User",
     "action": "read:any",
     "attributes": "*"
   },
   {
     "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "loginUsers",
     "resource": "Safenet",
     "action": "read:own",
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "loginUsers",
     "resource": "Safenet",
     "action": "create:any",
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "loginUsers",
     "resource": "Safenet",
     "action": "update:any",
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "loginUsers",
     "resource": "Safenet",
     "action": "delete:any",
     "attributes": "*"
   },
   {
-    "role": "user",
+    "role": "loginUsers",
     "resource": "Safenet",
     "action": "read:any",
-    "attributes": "*"
+    "attributes": "*,!key"
   }
 ]
