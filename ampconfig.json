@@ -1,0 +1,19 @@
+{
+  "dataServiceGeneratorVersion": "0.12.1",
+  "appInfo": {
+    "name": "safenet",
+    "description": "safenet",
+    "version": "vz994b7f",
+    "id": "cl14474d974294401s68q7u1nvy",
+    "url": "https://app.amplication.com/cl14474d974294401s68q7u1nvy",
+    "settings": {
+      "dbHost": "localhost",
+      "dbName": "",
+      "dbPassword": "admin",
+      "dbPort": 5432,
+      "dbUser": "admin",
+      "appId": "cl14474d974294401s68q7u1nvy",
+      "authProvider": "Jwt"
+    }
+  }
+}
