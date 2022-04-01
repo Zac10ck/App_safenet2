@@ -1,10 +1,7 @@
 Using this main.tf file you can setup an EC2 Server for running the safenet app  Along with VPC and subnet via Terraform  :sunglasses: !!!! 
 In this Tutorial i have  added how  we can setup an EC2 Server for running the Safenet app in  an EC2 envioronment using  terraform.
 
-**Note :** Before Perfoming this Steps ensure 
-           You have created an AWS Account
-           Configured an IAM user with programmatic access
-           Created a Key Pair in aws keypair service
+**Note :** Before Perfoming this Steps ensure that you have created an AWS Account also Configured an IAM user with programmatic access and Created a Key Pair in aws keypair service
 
 
 Step 1 : Install Terraform (If it is not Installed)
