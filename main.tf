@@ -100,8 +100,12 @@ resource "aws_instance" "Safenet-app" {
               #!/bin/bash
               sudo apt-get update -y
               sudo apt-get upgrade -y
-              sudo apt install docker
-              sudo apt install git
+              sudo apt install docker.io -y
+              sudo apt install git -y
+              sudo git clone https://github.com/Zac10ck/App_safenet2.gi
+              cd App_safenet2
+              sudo docker build -t safenet-app .
+              sudo docker run -d -p 3000:3000 safenet-app
               
               EOF   
 }
