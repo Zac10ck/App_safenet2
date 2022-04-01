@@ -18,7 +18,7 @@ Step 2 : After Installling terraform run the below command to deploy the main.tf
          Note : Before  deploying make sure you have added the IAM Access Key and Secret key inside the main.tf file 
          Also make sure created the pemkey for the instance via AWS console and should be added  in the keypair section inside main.tf file
           
-commands:          
+        
            terraform init
            
            terraform plan
