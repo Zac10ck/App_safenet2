@@ -1,4 +1,4 @@
-#NodePort Service Defnition file
+# K8's NodePort Service Defnition file
 apiVersion: v1
 kind: Service
 metadata:
@@ -33,7 +33,7 @@ spec:
         app: app-safenet-2
     spec:
      containers:
-# under image section add your container image name       
+# Add your container image name to the image section below       
       - image: <add your container image name>
         name: safenet-app
         ports:
