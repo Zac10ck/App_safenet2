@@ -1,8 +1,8 @@
 # Configure the AWS Provider
 provider "aws" {
   region = "ap-south-1"
-  access_key = "Paste your Access Key of ROOT Account"
-  secret_key = "Paste your Secret Key of ROOT Account "
+  access_key = "Paste your Access Key of IAM Account"
+  secret_key = "Paste your Secret Key of IAM Account "
 }
 #create vpc
 resource "aws_vpc" "safenetvpc" {
