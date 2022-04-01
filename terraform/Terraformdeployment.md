@@ -7,7 +7,7 @@ In this Tutorial i have  added how  we can setup an EC2 Server for running the S
            Created a Key Pair in aws keypair service
 
 
-Step 1 : Install Terraform  (If it is not Installed)
+Step 1 : Install Terraform (If it is not Installed)
 
           curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 
