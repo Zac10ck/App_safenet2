@@ -1,0 +1,40 @@
+#NodePort Service Defnition file
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-safenet-svc 
+spec:
+  type: NodePort
+  ports: 
+    - 
+      nodePort: 30110
+      port: 3000
+      targetPort: 3000
+  selector:
+    app: app-safenet
+---
+
+#Kubernetes Deployment YAML file
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  safenet-app
+  labels:
+    app: app-safenet
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+     app: app-safenet-2
+  template:
+    metadata:
+      labels:
+        app: app-safenet-2
+    spec:
+     containers:
+# under image section add your container image name       
+      - image: <add your container image name>
+        name: safenet-app
+        ports:
+        - containerPort: 3000
