@@ -27,10 +27,14 @@ Step 2 : After Installling terraform run the below command to deploy the main.tf
            
            terraform apply
 
-Step 3: SSH into your instance created via terraform using the command <br>
-         ssh -i your_created_pemkeyfile.pem ubuntu@ip </br>
-Step 4 : 
+Step 3: SSH into your instance created your the command  <br>
+              ssh -i your_created_pemkeyfile.pem ubuntu@ip </br>
+Step 4 :   From the User directory run the below commands to start the contianer
+              
               sudo git clone https://github.com/Zac10ck/App_safenet2.git <br>
+              
               cd App_safenet2 <br>
+              
               sudo docker build -t safenet-app .  <br>
+              
               sudo docker run -d -p 3000:3000 safenet-app
