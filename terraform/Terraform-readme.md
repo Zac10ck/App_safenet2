@@ -13,10 +13,12 @@ Step 1 : Install Terraform (If it is not Installed)
           sudo apt install terraform
 
 Step 2 : After Installling terraform run the below command to deploy the main.tf file for starting  the infra setup 
-        Run the commands from the main.tf file location
+         Run the commands from the main.tf file location
          
          Note : Before  deploying make sure you have added the IAM Access Key and Secret key inside the main.tf file 
          Also make sure created the pemkey for the instance via AWS console and should be added  in the keypair section inside main.tf file
+         
+         
           
         
            terraform init
@@ -24,3 +26,11 @@ Step 2 : After Installling terraform run the below command to deploy the main.tf
            terraform plan
            
            terraform apply
+
+Step 3: SSH into your instance created via terraform using the command <br>
+         ssh -i your_created_pemkeyfile.pem ubuntu@ip </br>
+Step 4 : 
+              sudo git clone https://github.com/Zac10ck/App_safenet2.git <br>
+              cd App_safenet2 <br>
+              sudo docker build -t safenet-app .  <br>
+              sudo docker run -d -p 3000:3000 safenet-app
