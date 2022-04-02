@@ -1,3 +1,5 @@
+#terraform script to Create an EC2 instance for deploying safenet app along with VPC and Subnets
+
 # Configure the AWS Provider
 provider "aws" {
   region = "ap-south-1"
