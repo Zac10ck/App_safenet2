@@ -27,7 +27,7 @@ Step 2 : After Installling terraform run the below command to deploy the main.tf
            
            terraform apply
 
-Step 3: SSH into your instance created your the command  <br>
+Step 3: SSH into your newly created instance using the command  <br>
          <center>  ssh -i your_created_pemkeyfile.pem ubuntu@ip </center>
               
 Step 4 :   From the User directory run the below commands to start the contianer
